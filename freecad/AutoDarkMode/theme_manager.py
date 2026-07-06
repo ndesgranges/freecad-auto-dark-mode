@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: MIT
+# SPDX-FileNotice: Part of the Auto Dark Mode addon.
 """
 Theme manager for Auto Dark Mode addon.
 Handles applying themes and monitoring system theme changes.
@@ -5,8 +7,8 @@ Handles applying themes and monitoring system theme changes.
 
 import FreeCAD
 import FreeCADGui
-import preferences
-import theme_detector
+from . import preferences
+from . import theme_detector
 from PySide import QtCore
 
 

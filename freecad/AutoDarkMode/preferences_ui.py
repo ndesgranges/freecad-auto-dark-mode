@@ -1,11 +1,13 @@
+# SPDX-License-Identifier: MIT
+# SPDX-FileNotice: Part of the Auto Dark Mode addon.
 """
 Preferences UI panel for Auto Dark Mode addon.
 """
 
 import FreeCAD
-import preferences
-import theme_detector
-import theme_manager
+from . import preferences
+from . import theme_detector
+from . import theme_manager
 from PySide import QtWidgets
 
 

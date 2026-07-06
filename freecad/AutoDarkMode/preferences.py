@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: MIT
+# SPDX-FileNotice: Part of the Auto Dark Mode addon.
 """
 Preferences management for Auto Dark Mode addon.
 Handles configuration for light and dark theme selection.

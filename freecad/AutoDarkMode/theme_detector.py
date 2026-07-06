@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: MIT
+# SPDX-FileNotice: Part of the Auto Dark Mode addon.
 """
 System theme detection module for Auto Dark Mode addon.
 Handles cross-platform detection of system light/dark theme.
