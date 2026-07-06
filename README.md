@@ -1,39 +1,33 @@
+![icon](resources/icons/auto_dark_mode.svg)
+
 # Auto Dark Mode for FreeCAD
 
-Automatically switch FreeCAD themes based on your system's light/dark appearance setting.
-
-## Features
-
-- **Automatic Theme Switching**: Detects system theme changes and applies the appropriate FreeCAD stylesheet
-- **Cross-Platform Support**: Works on macOS, Windows, and Linux (GNOME, KDE)
-- **Configurable Themes**: Choose which FreeCAD theme to use for light mode and dark mode
-- **Real-time Monitoring**: Continuously monitors system theme and reacts to changes
-- **Supports Theme Addons**: Automatically detects themes from FreeCAD-themes, OpenTheme, and other theme addons
+Automatically switch FreeCAD themes based on your system's light/dark
+appearance setting.
 
 ## Installation
 
-### Manual Installation (FreeCAD 1.0+)
+1. Open `Preferences...` > `Addon Manager`
+2. Add an item in `Custom Repositories` :
+    | Repository URL                                        | Branch name |
+    | ----------------------------------------------------- | ----------- |
+    | https://github.com/ndesgranges/freecad-auto-dark-mode | master      |
+3. Press **OK** and open `Tools` > `Addon Manager`
+4. Search for `freecad-auto-dark-mode` and click install
+5. Reboot when asked.
 
-1. Download or clone this repository
-2. Copy the `AutoDarkMode` folder to your FreeCAD Mod directory:
-   - **macOS**: `~/Library/Application Support/FreeCAD/v1-1/Mod/`
-   - **Windows**: `%APPDATA%\FreeCAD\v1-1\Mod\`
-   - **Linux**: `~/.local/share/FreeCAD/v1-1/Mod/`
-3. Restart FreeCAD
+You can now configure your themes, see [Configuration](#configuration)
 
-### Via Addon Manager
-
-*Coming soon*
 
 ## Configuration
 
 1. Open FreeCAD
-2. Go to **Edit → Auto Dark Mode Settings...**
+2. Go to `Edit` > `Auto Dark Mode Settings...`
 3. Configure your preferences:
    - **Enable automatic theme switching**: Toggle the feature on/off
-   - **Light mode theme**: Select the stylesheet to use when system is in light mode
-   - **Dark mode theme**: Select the stylesheet to use when system is in dark mode
-   - **Check interval**: How often to check for system theme changes (default: 5 seconds)
+   - **Light mode theme**: Select the theme to use when system is in light mode
+   - **Dark mode theme**: Select the theme to use when system is in dark mode
+   - **Check interval**: How often to check for system theme changes
 4. Click **OK** to save
 
 ## Supported Platforms
@@ -70,8 +64,9 @@ Supports multiple desktop environments:
 - Check that your theme addons are properly installed
 
 ### System theme not detected correctly
-- On Linux, make sure you have `gsettings` (GNOME) or `kreadconfig5` (KDE) available
-- The addon checks theme every few seconds; changes may take a moment to apply
+- On Linux, make sure you have `gsettings` (GNOME) or `kreadconfig5` (KDE)
+- The addon checks theme every few seconds; changes may take a moment to apply.
+  See [Configuration](#configuration)
 
 ## License
 
