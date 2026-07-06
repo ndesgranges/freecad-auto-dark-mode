@@ -30,6 +30,10 @@ You can now configure your themes, see [Configuration](#configuration)
    - **Check interval**: How often to check for system theme changes
 4. Click **OK** to save
 
+<img width="414" height="499" alt="Configuration window screenshot" src="https://github.com/user-attachments/assets/599d27e1-7481-47a3-83a1-d7602668d557" />
+
+
+
 ## Supported Platforms
 
 > [!NOTE]
