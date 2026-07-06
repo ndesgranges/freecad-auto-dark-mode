@@ -11,7 +11,7 @@
     <pythonmin>3.8.0</pythonmin>
 
     <url type="website">https://github.com/ndesgranges/freecad-auto-dark-mode</url>
-    <url branch="master">https://github.com/ndesgranges/freecad-auto-dark-mode</url>
+    <url branch="fix/addon-manager-compliance">https://github.com/ndesgranges/freecad-auto-dark-mode</url>
     <url type="readme">https://github.com/ndesgranges/freecad-auto-dark-mode/blob/master/README.md</url>
 
     <content>
