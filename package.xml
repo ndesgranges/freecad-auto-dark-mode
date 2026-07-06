@@ -4,21 +4,23 @@
     <description>Automatically switch FreeCAD theme based on system appearance (light/dark mode)</description>
     <version>1.0.0</version>
     <date>2026-07-06</date>
-    <maintainer>ndesgranges</maintainer>
+    <maintainer email="">ndesgranges</maintainer>
     <license file="LICENSE">MIT</license>
     <icon>resources/icons/auto_dark_mode.svg</icon>
 
-    <pythonmin>3.8.0</pythonmin>
+    <freecadmin>0.21.0</freecadmin>
+    <pythonmin>3.8</pythonmin>
 
     <url type="website">https://github.com/ndesgranges/freecad-auto-dark-mode</url>
-    <url branch="fix/addon-manager-compliance">https://github.com/ndesgranges/freecad-auto-dark-mode</url>
+    <url type="repository" branch="fix/addon-manager-compliance">https://github.com/ndesgranges/freecad-auto-dark-mode.git</url>
     <url type="readme">https://github.com/ndesgranges/freecad-auto-dark-mode/blob/master/README.md</url>
 
     <content>
         <workbench>
             <name>AutoDarkMode</name>
-            <freecadmin>0.21.0</freecadmin>
-            <subdirectory>./AutoDarkMode/</subdirectory>
+            <classname>AutoDarkModeWorkbench</classname>
+            <subdirectory>AutoDarkMode</subdirectory>
+            <icon>../resources/icons/auto_dark_mode.svg</icon>
         </workbench>
     </content>
 

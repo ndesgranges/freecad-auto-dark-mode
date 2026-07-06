@@ -3,6 +3,44 @@ FreeCAD GUI initialization for Auto Dark Mode addon.
 This file is executed when FreeCAD GUI starts.
 """
 
+import os
+import FreeCADGui
+
+# Get the addon root directory (parent of AutoDarkMode folder)
+_addon_dir = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+_icon_path = os.path.join(_addon_dir, "resources", "icons", "auto_dark_mode.svg")
+
+
+class AutoDarkModeWorkbench(FreeCADGui.Workbench):
+    """Minimal workbench for Auto Dark Mode addon.
+
+    This addon runs automatically at startup and doesn't need a visible workbench.
+    The workbench class is required for Addon Manager compatibility.
+    """
+    MenuText = "Auto Dark Mode"
+    ToolTip = "Automatically switch theme based on system appearance"
+    Icon = _icon_path
+
+    def Initialize(self):
+        """Called when the workbench is first activated."""
+        pass
+
+    def Activated(self):
+        """Called when switching to this workbench."""
+        pass
+
+    def Deactivated(self):
+        """Called when switching away from this workbench."""
+        pass
+
+    def GetClassName(self):
+        return "Gui::PythonWorkbench"
+
+
+# Register the workbench
+FreeCADGui.addWorkbench(AutoDarkModeWorkbench)
+
+
 def _init_auto_dark_mode():
     """Initialize Auto Dark Mode - wrapped in function to survive FreeCAD's exec() scope."""
     import os
