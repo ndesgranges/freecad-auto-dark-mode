@@ -3,17 +3,16 @@
     <name>AutoDarkMode</name>
     <description>Automatically switch FreeCAD theme based on system appearance (light/dark mode)</description>
     <version>1.0.0</version>
-    <maintainer email="">ndesgranges</maintainer>
+    <date>2026-07-06</date>
+    <maintainer>ndesgranges</maintainer>
     <license file="LICENSE">MIT</license>
-    <url type="repository" branch="main">https://github.com/ndesgranges/freecad-auto-dark-mode</url>
-    <icon>resources/icons/auto_dark_mode.svg</icon>
+    <url branch="master">https://github.com/ndesgranges/freecad-auto-dark-mode</url>
 
     <content>
         <workbench>
             <freecadmin>0.21.0</freecadmin>
+            <icon>resources/icons/auto_dark_mode.svg</icon>
             <subdirectory>AutoDarkMode/</subdirectory>
         </workbench>
     </content>
-
-    <depend>FreeCAD</depend>
 </package>
