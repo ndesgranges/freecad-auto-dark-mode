@@ -6,6 +6,7 @@
     <date>2026-07-06</date>
     <maintainer>ndesgranges</maintainer>
     <license file="LICENSE">MIT</license>
+    <icon>resources/icons/auto_dark_mode.svg</icon>
 
     <pythonmin>3.8.0</pythonmin>
 
@@ -15,9 +16,9 @@
 
     <content>
         <workbench>
+            <name>AutoDarkMode</name>
             <freecadmin>0.21.0</freecadmin>
-            <icon>resources/icons/auto_dark_mode.svg</icon>
-            <subdirectory>AutoDarkMode/</subdirectory>
+            <subdirectory>./AutoDarkMode/</subdirectory>
         </workbench>
     </content>
 
